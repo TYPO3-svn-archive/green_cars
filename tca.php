@@ -175,6 +175,7 @@ $TCA['tx_greencars_main'] = array (
           // treeview, dwildt-
           // treeview, dwildt+
 				'foreign_table_where' => 'AND 1 ORDER BY tx_greencars_manufacturer.uid',
+				'size'                => 10,
 				'maxitems'            => 10,
         'form_type'     => 'user',
         'userFunc'      => 'tx_cpstcatree->getTree',
