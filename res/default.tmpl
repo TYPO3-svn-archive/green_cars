@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+  <body>
+<pre>
+<!-- ###TEMPLATE_LIST### begin -->
+<!-- ###LIST_TITLE### begin -->
+        ###MY_TITLE###
+<!-- ###LIST_TITLE### end -->
+<!-- ###SEARCHFORM### begin -->
+        <div class="searchbox searchbox-###VIEW###-###MODE###">
+          <form action="###ACTION###" method="post" >
+            <fieldset>
+              <legend>###MY_SEARCH_LEGEND###</legend>
+              <input type="hidden" name="no_cache" value="1" />
+              <input class="sword" type="text" name="tx_browser_pi1[sword]" onfocus="if(this.value =='###SWORD_DEFAULT###') this.value=''" value="###SWORD###" />
+              <input class="button" type="submit" value="###BUTTON###" />
+              <input class="reset" type="button" onclick="location='###MY_URL###'" value="###MY_RESET###" />
+              <!-- Add filter with the ###TABLE.FIELD### syntax and configure your filter with TypoScript -->
+              <br />
+              ###TX_GREENCARS_TYPE.TITLE###
+              ###TX_GREENCARS_ENGINE.TITLE###
+              ###TX_GREENCARS_PRICEBRACKET.TITLE###
+            </fieldset>
+          </form>
+          ###RESULTPHRASE###
+        </div><!-- ###SEARCHFORM### end -->
+        <div class="listarea">
+<!-- ###LISTHEAD### begin --><!-- ###LISTHEADITEM### begin -->
+        ###ITEM###<!-- ###LISTHEADITEM### end --><!-- ###LISTHEAD### end -->
+<!-- ###CATEGORY_MENU### begin -->
+        <!-- Add the category menu with the ###TABLE.FIELD### syntax and configure your category menu with TypoScript --> 
+        <!-- ###CATEGORY_MENU### end -->
+<!-- ###AZSELECTOR### begin -->
+        <div class="azSelector azSelector-###UL_VIEW###-###UL_MODE###">
+          <ul class="azSelector azSelector-###UL_VIEW###-###UL_MODE###"><!-- ###AZSELECTORTABS### begin -->
+            <li###LI_CLASS###>###TAB###</li><!-- ###AZSELECTORTABS### end -->
+          </ul>
+        </div><!-- ###AZSELECTOR### end -->
+<!-- ###PAGEBROWSER### begin -->
+        <div class="browsebox browsebox-###VIEW###-###MODE###">
+          ###RESULT_AND_ITEMS###
+        </div><!-- ###PAGEBROWSER### end -->
+<!-- ###MODESELECTOR### begin -->
+        <div class="modeSelector modeSelector-###VIEW###-###MODE###">
+          <ul class="modeSelector modeSelector-###VIEW###-###MODE###"><!-- ###MODESELECTORTABS### begin -->
+            <li###CLASS###>###TABS###</li><!-- ###MODESELECTORTABS### end -->
+          </ul>
+        </div><!-- ###MODESELECTOR### end -->
+<!-- ###LISTVIEW### begin -->
+        <div class="###VIEW###view ###VIEW###view-###MODE###">
+          <!-- ###LISTBODY### begin --><!-- ###LISTBODYITEM### begin -->
+            <div class="record" style="height:74px;border-bottom:solid white .2em;padding-top:.4em">
+              <div class="image" style="float:left;padding-right:1em;width:120px;">
+                ###TX_GREENCARS_MAIN.IMAGE###
+              </div>
+              <div class="car" style="font-size:1.2em;float:left;">
+                ###SOCIALMEDIA_BOOKMARKS### ###TX_GREENCARS_MANUFACTURER.TITLE###<br />
+                ###TX_GREENCARS_MAIN.TITLE###
+              </div>
+              <div class="co2" style="font-size:2.4em;font-weight:bold;width:100%;text-align:right;">
+                ###TX_GREENCARS_MAIN.CONSUMPTION_AVERAGE###
+                ###TX_GREENCARS_MAIN.CO2###
+              </div>
+            </div>
+            <div style="clear:both;height:0px;">&nbsp;</div>
+          <!-- ###LISTBODYITEM### end --><!-- ###LISTBODY### end -->
+        </div><!-- ###LISTVIEW### end -->
+        </div> <!-- /listarea -->
+<!-- ###TEMPLATE_LIST### end -->
+
+
+
+
+
+
+<!-- ###TEMPLATE_SINGLE### begin -->
+<!-- ###MODESELECTOR### begin -->
+        <div class="modeSelector modeSelector-###VIEW###-###MODE###">
+          <ul class="modeSelector modeSelector-###VIEW###-###MODE###"><!-- ###MODESELECTORTABS### begin -->
+            <li###CLASS###>###TABS###</li><!-- ###MODESELECTORTABS### end -->
+          </ul>
+        </div><!-- ###MODESELECTOR### end --><!-- ###SINGLEVIEW### begin -->
+        <div id="c###TT_CONTENT.UID###-###VIEW###view-###MODE###" class="###VIEW###view ###VIEW###view-###MODE###">
+          ###RECORD_BROWSER###
+          <!-- ###SINGLEBODY### begin --><!-- ###SINGLEBODYROW### begin -->
+          <div class="header" style="height:4em;">
+            <div class="car" style="float:left;">
+              <h1 style="padding:0;margin:0;">
+                <span style="font-size:.5em;">###SOCIALMEDIA_BOOKMARKS### ###TX_GREENCARS_MANUFACTURER.TITLE###</span><br />
+                ###TX_GREENCARS_MAIN.TITLE###
+              </h1>
+            </div>
+            <div class="co2" style="font-size:3.6em;font-weight:bold;width:100%;text-align:right;">
+              ###TX_GREENCARS_MAIN.CO2### g CO<sub>2</sub>
+            </div>
+          </div>
+          <div class="image" style="padding-top:2em;">
+            ###TX_GREENCARS_MAIN.IMAGE###
+          </div>
+          <div style="clear:both;line-height:0;">
+            &nbsp;
+          </div>
+          <div class="text" style="font-size:1.2em;">
+            <ul>
+              <li>
+                Modell: ###TX_GREENCARS_MAIN.TITLE###
+              </li>
+              <li>
+                Hersteller: ###TX_GREENCARS_MANUFACTURER.TITLE###
+              </li>
+              <li>
+                Fahrzeugtyp: ###TX_GREENCARS_TYPE.TITLE###
+              </li>
+              <li>
+                Antrieb: ###TX_GREENCARS_ENGINE.TITLE###
+              </li>
+              <li>
+                H&ouml;chstgeschwindigkeit: ###TX_GREENCARS_MAIN.SPEED### Km/h
+              </li>
+              <li>
+                Verbrauch:
+                <ul>
+                  <li>
+                    Stadt: ###TX_GREENCARS_MAIN.CONSUMPTION_IN_TOWN### Liter / 100 Km
+                  </li>
+                  <li>
+                    Land: ###TX_GREENCARS_MAIN.CONSUMPTION_OUTOF_TOWN### Liter / 100 Km
+                  </li>
+                  <li>
+                    Schnitt: ###TX_GREENCARS_MAIN.CONSUMPTION_AVERAGE### Liter / 100 Km
+                  </li>
+                </ul>
+              </li>
+              <li>
+                CO<sub>2</sub>: ###TX_GREENCARS_MAIN.CO2### Gramm / 100 Km
+              </li>
+              <li>
+                Preis: ###TX_GREENCARS_MAIN.PRICE### EUR
+              </li>
+            </ul>
+            <p style="font-size:small;">
+              Alle Angaben ohne Gew&auml;hr
+            </p>
+            <!-- ###BACKBUTTON### begin --><p class="backbutton" style="text-align:right;">
+              ###BUTTON###
+            </p><!-- ###BACKBUTTON### end -->
+          </div>
+          <!-- ###SINGLEBODYROW### end --><!-- ###SINGLEBODY### end -->
+        </div><!-- ###SINGLEVIEW### end -->
+<!-- ###TEMPLATE_SINGLE### end -->
+
+
+
+<!-- ###TEMPLATE_SELECTBOX_VALID### begin -->
+          <form ###CLASS### action="###URL###" method="POST">
+            <fieldset>
+              <legend>###LEGEND###</legend>
+              ###HIDDEN###
+              ###SELECTBOX###
+              <input class="button" type="submit" value="###BUTTON###" />
+            </fieldset>
+          </form>
+<!-- ###TEMPLATE_SELECTBOX_VALID### end -->
+
+
+
+<!-- ###TEMPLATE_SELECTBOX### begin -->
+          <script type="text/javascript">
+            function Go (select) {
+              var str_url = select.options[select.options.selectedIndex].value;
+              if (str_url == "0") {
+                select.form.reset();
+                return;
+              } else {
+                window.location.href = str_url;
+              }
+            }
+          </script>
+          <form action="">
+            ###SELECTBOX###
+          </form>
+<!-- ###TEMPLATE_SELECTBOX### end -->
+
+
+
+
+
+</pre>
+  </body>
+</html>

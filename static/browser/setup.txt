@@ -1,0 +1,139 @@
+
+
+  //////////////////////////////////////////////////////////
+  //
+  // INDEX
+  
+  // config
+  // plugin.tx_browser_pi1
+  // page
+  
+
+
+
+config {
+  spamProtectEmailAddresses               = 6
+  spamProtectEmailAddresses_atSubst       = <span style="display:none;">spamfilter</span><span class="dummy">@</span>
+  spamProtectEmailAddresses_lastDotSubst  = <span style="display:none;">spamfilter</span><span class="dummy">.</span>
+  
+}
+
+plugin.tx_browser_pi1 {
+  template {
+    file = EXT:green_cars/res/default.tmpl
+    extensions {
+      green_cars {
+        default {
+          name = Green Cars
+          file = EXT:green_cars/res/default.tmpl
+        }
+      }
+    }
+  }
+  navigation {
+    a-z_Browser {
+      field = tx_greencars_main.title
+    }
+  }
+  displaySingle {
+    image {
+      wrap = <div style="float:left;padding-right:1em;">|</div>
+      file {
+        width  = 240
+        height = 180c
+      }
+    }
+    caption_stdWrap {
+      wrap >
+    }
+  }
+  views {
+    list {
+      1 {
+        select (
+          tx_greencars_main.image,
+          tx_greencars_manufacturer.title,
+          tx_greencars_main.title,
+          tx_greencars_main.co2,
+          tx_greencars_main.consumption_average
+        )
+        orderBy (
+          tx_greencars_main.co2,
+          tx_greencars_main.price,
+          tx_greencars_manufacturer.title,
+          tx_greencars_main.title
+        )
+        csvLinkToSingleView = tx_greencars_manufacturer.title, tx_greencars_main.title
+        tx_greencars_main {
+          co2 {
+            wrap = |<span style="font-size:.5em">g CO<sub>2</sub></span>
+          }
+          consumption_average {
+            wrap = |<span style="font-size:.5em"> Liter</span>
+          }
+        }
+        filter {
+          tx_greencars_engine {
+            title < plugin.tx_browser_pi1.displayList.master_templates.selectbox
+            title {
+              first_item {
+                stdWrap {
+                  data = LLL:EXT:green_cars/locallang_db.xml:tx_greencars_main.engine
+                }
+              }
+              wrap = |
+            }
+          }
+          tx_greencars_pricebracket {
+            title < plugin.tx_browser_pi1.displayList.master_templates.selectbox
+            title {
+              first_item {
+                stdWrap {
+                  data = LLL:EXT:green_cars/locallang_db.xml:tx_greencars_main.pricebracket
+                }
+              }
+              wrap = |
+              order {
+                field = uid
+              }
+            }
+          }
+          tx_greencars_type {
+            title < plugin.tx_browser_pi1.displayList.master_templates.selectbox
+            title {
+              first_item {
+                stdWrap {
+                  data = LLL:EXT:green_cars/locallang_db.xml:tx_greencars_main.type
+                }
+              }
+              wrap = |
+            }
+          }
+        }
+      }
+    }
+    single {
+      1 {
+        select (
+          tx_greencars_main.image,
+          tx_greencars_main.imagealttext,
+          tx_greencars_main.imagetitletext,
+          tx_greencars_manufacturer.title,
+          tx_greencars_main.title,
+          tx_greencars_main.speed,
+          tx_greencars_main.co2,
+          tx_greencars_main.consumption_in_town,
+          tx_greencars_main.consumption_outof_town,
+          tx_greencars_main.consumption_average,
+          tx_greencars_main.price,
+          tx_greencars_engine.title,
+          tx_greencars_type.title
+        )
+      }
+    }
+  }
+}
+
+page {
+  shortcutIcon = EXT:green_cars/res/favicon.ico
+}

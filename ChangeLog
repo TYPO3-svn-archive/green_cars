@@ -1,0 +1,38 @@
+1.2.0
+  11-08-08
+  Improvement
+  * Update to browser 3.7.0 (new feature: record_browser)
+    * default.tmpl
+      * single view got an id
+      * single view got the marker for the record browser ###RECORD_BROWSER###
+
+1.1.1
+  10-10-12
+  New Feature
+  - #10224: Integration of templates of 3rd party extensions
+  
+1.0.1
+  10-10-11
+  New Feature
+  - #9659: AJAX
+  - default.tmpl
+    - reset button got the class reset
+    - listarea is wrapped with <div class="listarea">...</div>
+    
+0.0.4
+  2010-08-30
+  New Feature
+  - Template got the ###SOCIALMEDIA_BOOKMARKS### Marker
+  Improvement
+  - CSS
+  
+0.0.3
+  2010-02-18
+  Bugfix
+  - Wrong URL in the manual
+  
+0.0.2
+  2010-01-22
+  Initial Release
+  Dirk Wildt http://wildt.at.die.netzmacher.de
+

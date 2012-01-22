@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'green_cars'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_greencars_manufacturer">Green Cars: Manufacturer</label>
+			<label index="tx_greencars_manufacturer.title">Manufacturer</label>
+			<label index="tx_greencars_type">Green Cars: Type</label>
+			<label index="tx_greencars_type.title">Title</label>
+			<label index="tx_greencars_pricebracket">Green Cars: Price Bracket</label>
+			<label index="tx_greencars_pricebracket.title">Title</label>
+			<label index="tx_greencars_engine">Green Cars: Engine</label>
+			<label index="tx_greencars_engine.title">Title</label>
+			<label index="tx_greencars_main">Green Cars</label>
+			<label index="tx_greencars_main.manufacturer">Manufacturer</label>
+			<label index="tx_greencars_main.title">Model</label>
+			<label index="tx_greencars_main.type">Type</label>
+			<label index="tx_greencars_main.engine">Engine</label>
+			<label index="tx_greencars_main.pricebracket">Price Bracket</label>
+			<label index="tx_greencars_main.price">Price</label>
+			<label index="tx_greencars_main.speed">Speed</label>
+			<label index="tx_greencars_main.consumption_in_town">Consumption in Town</label>
+			<label index="tx_greencars_main.consumption_outof_town">Consumption out of Town</label>
+			<label index="tx_greencars_main.consumption_average">Consumption Average</label>
+			<label index="tx_greencars_main.co2">CO-2</label>
+			<label index="tx_greencars_main.image">Images</label>
+			<label index="tx_greencars_main.imagecaption">Image Captions</label>
+			<label index="tx_greencars_main.imagealttext">Image HTML alt text</label>
+			<label index="tx_greencars_main.imagetitletext">Image HTML title text</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="tx_greencars_manufacturer">Grüne Autos: Hersteller</label>
+			<label index="tx_greencars_manufacturer.title">Hersteller</label>
+			<label index="tx_greencars_type">Grüne Autos: Typ</label>
+			<label index="tx_greencars_type.title">Titel</label>
+			<label index="tx_greencars_pricebracket">Grüne Autos: Preisgruppe</label>
+			<label index="tx_greencars_pricebracket.title">Titel</label>
+			<label index="tx_greencars_engine">Grüne Autos: Antrieb</label>
+			<label index="tx_greencars_engine.title">Titel</label>
+			<label index="tx_greencars_main">Grüne Autos</label>
+			<label index="tx_greencars_main.manufacturer">Hersteller</label>
+			<label index="tx_greencars_main.title">Modell</label>
+			<label index="tx_greencars_main.type">Typ</label>
+			<label index="tx_greencars_main.engine">Antrieb</label>
+			<label index="tx_greencars_main.pricebracket">Preisgruppe</label>
+			<label index="tx_greencars_main.price">Preis</label>
+			<label index="tx_greencars_main.speed">Geschwindigkeit</label>
+			<label index="tx_greencars_main.consumption_in_town">Verbrauch innerorts</label>
+			<label index="tx_greencars_main.consumption_outof_town">Verbrauch außerorts</label>
+			<label index="tx_greencars_main.consumption_average">Verbrauch Durchschnitt</label>
+			<label index="tx_greencars_main.co2">CO-2</label>
+			<label index="tx_greencars_main.image">Bilder</label>
+			<label index="tx_greencars_main.imagecaption">Bildunterschriften</label>
+			<label index="tx_greencars_main.imagealttext">HTML Alt Text</label>
+			<label index="tx_greencars_main.imagetitletext">HTML Title Text</label>
+		</languageKey>
+	</data>
+</T3locallang>
