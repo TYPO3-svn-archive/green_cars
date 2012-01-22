@@ -145,6 +145,19 @@ plugin.tx_browser_pi1 {
   }
 }
 
+  ////////////////////////////////////////
+  //
+  // page
+
 page {
+  config {
+    headerComment (
+          TYPO3-Programmierung: die-netzmacher.de
+)
+  }
   shortcutIcon = EXT:green_cars/res/favicon.ico
+  includeCSS {
+    green_cars = EXT:green_cars/res/html/default.css
+  }
 }
+  // page
