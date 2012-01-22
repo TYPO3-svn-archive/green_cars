@@ -1,0 +1,21 @@
+.tx-browser-pi1 .category_menu_treeview {
+  float: left;
+  padding-right: 1em;
+  position: relative;
+  top: -1em;
+  width: 30em;
+}
+
+.tx-browser-pi1 .category_menu_treeview a {
+  font-weight:normal;
+}
+.tx-browser-pi1 .category_menu_treeview a.selected {
+  font-weight:bold;
+}
+
+#treeview {
+  border: 1px solid #CCC;
+  border-radius: 6px 6px 6px 6px;
+  margin: 1em 0;
+  padding: 0.4em;
+}
