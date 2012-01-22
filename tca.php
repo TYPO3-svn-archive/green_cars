@@ -181,7 +181,7 @@ $TCA['tx_greencars_main'] = array (
         'userFunc'      => 'tx_cpstcatree->getTree',
         'treeView'      => 1,
         'expandable'    => 1,
-        'expandFirst'   => 0,
+        'expandFirst'   => 1,
         'expandAll'     => 0,
           // treeview, dwildt+
         'suppress_icons'      => 1,
