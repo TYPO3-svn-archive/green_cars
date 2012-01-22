@@ -161,21 +161,21 @@ $TCA['tx_greencars_main'] = array (
 			'label' => 'LLL:EXT:green_cars/locallang_db.xml:tx_greencars_main.manufacturer',		
 			'config' => array (
 				'type' => 'select',
-				'items' => array (
-					array('',0),
-				),
+          // treeview, dwildt-
+//				'items' => array (
+//					array('',0),
+//				),
+          // treeview, dwildt-
+				'minitems'            => 0,
 				'foreign_table'       => 'tx_greencars_manufacturer',
           // treeview, dwildt-
 //				'foreign_table_where' => 'AND tx_greencars_manufacturer.pid=###CURRENT_PID### ORDER BY tx_greencars_manufacturer.uid',
-          // treeview, dwildt+
-				'foreign_table_where' => 'AND 1 ORDER BY tx_greencars_manufacturer.uid',
-				'minitems'            => 0,
-          // treeview, dwildt-
 //				'size'                => 1,
 //				'maxitems'            => 1,
           // treeview, dwildt-
           // treeview, dwildt+
-				'maxitems'            => 1,
+				'foreign_table_where' => 'AND 1 ORDER BY tx_greencars_manufacturer.uid',
+				'maxitems'            => 10,
         'form_type'     => 'user',
         'userFunc'      => 'tx_cpstcatree->getTree',
         'treeView'      => 1,
