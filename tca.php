@@ -165,7 +165,10 @@ $TCA['tx_greencars_main'] = array (
 					array('',0),
 				),
 				'foreign_table'       => 'tx_greencars_manufacturer',
-				'foreign_table_where' => 'AND tx_greencars_manufacturer.pid=###CURRENT_PID### ORDER BY tx_greencars_manufacturer.uid',
+          // treeview, dwildt-
+//				'foreign_table_where' => 'AND tx_greencars_manufacturer.pid=###CURRENT_PID### ORDER BY tx_greencars_manufacturer.uid',
+          // treeview, dwildt+
+				'foreign_table_where' => 'AND 1 ORDER BY tx_greencars_manufacturer.uid',
 				'minitems'            => 0,
           // treeview, dwildt-
 //				'size'                => 1,
