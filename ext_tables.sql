@@ -86,7 +86,7 @@ CREATE TABLE tx_greencars_main (
 	cruser_id int(11) DEFAULT '0' NOT NULL,
 	deleted tinyint(4) DEFAULT '0' NOT NULL,
 	hidden tinyint(4) DEFAULT '0' NOT NULL,
-	manufacturer int(11) DEFAULT '0' NOT NULL,
+	manufacturer tinytext,
 	title tinytext,
 	type int(11) DEFAULT '0' NOT NULL,
 	engine int(11) DEFAULT '0' NOT NULL,
