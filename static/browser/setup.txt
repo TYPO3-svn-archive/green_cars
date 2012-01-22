@@ -157,7 +157,7 @@ page {
   }
   shortcutIcon = EXT:green_cars/res/favicon.ico
   includeCSS {
-    green_cars = EXT:green_cars/res/html/default.css
+    green_cars = EXT:green_cars/res/default.css
   }
 }
   // page
