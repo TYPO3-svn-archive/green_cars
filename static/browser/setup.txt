@@ -73,11 +73,22 @@ plugin.tx_browser_pi1 {
           }
         }
         filter {
+          tx_greencars_manufacturer {
+            title < plugin.tx_browser_pi1.displayList.master_templates.category_menu
+            title {
+              first_item {
+                value_stdWrap {
+                  data = LLL:EXT:green_cars/locallang_db.xml:tx_greencars_main.manufacturer
+                }
+              }
+              wrap = |
+            }
+          }
           tx_greencars_engine {
             title < plugin.tx_browser_pi1.displayList.master_templates.selectbox
             title {
               first_item {
-                stdWrap {
+                value_stdWrap {
                   data = LLL:EXT:green_cars/locallang_db.xml:tx_greencars_main.engine
                 }
               }
@@ -88,7 +99,7 @@ plugin.tx_browser_pi1 {
             title < plugin.tx_browser_pi1.displayList.master_templates.selectbox
             title {
               first_item {
-                stdWrap {
+                value_stdWrap {
                   data = LLL:EXT:green_cars/locallang_db.xml:tx_greencars_main.pricebracket
                 }
               }
@@ -102,7 +113,7 @@ plugin.tx_browser_pi1 {
             title < plugin.tx_browser_pi1.displayList.master_templates.selectbox
             title {
               first_item {
-                stdWrap {
+                value_stdWrap {
                   data = LLL:EXT:green_cars/locallang_db.xml:tx_greencars_main.type
                 }
               }
