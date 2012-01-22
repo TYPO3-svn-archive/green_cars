@@ -164,14 +164,15 @@ $TCA['tx_greencars_main'] = array (
 				'items' => array (
 					array('',0),
 				),
-				'foreign_table' => 'tx_greencars_manufacturer',	
+				'foreign_table'       => 'tx_greencars_manufacturer',
 				'foreign_table_where' => 'AND tx_greencars_manufacturer.pid=###CURRENT_PID### ORDER BY tx_greencars_manufacturer.uid',	
-				'size' => 1,	
-				'minitems' => 0,
-				'maxitems' => 1,	
-				'wizards' => array(
+				'size'                => 1,
+        'suppress_icons'      => 1,
+				'minitems'            => 0,
+				'maxitems'            => 1,
+				'wizards'             => array(
 					'_PADDING'  => 2,
-					'_VERTICAL' => 1,
+					'_VERTICAL' => 0,
 					'add' => array(
 						'type'   => 'script',
 						'title'  => 'Create new record',
@@ -222,13 +223,14 @@ $TCA['tx_greencars_main'] = array (
 					array('',0),
 				),
 				'foreign_table' => 'tx_greencars_type',	
-				'foreign_table_where' => 'AND tx_greencars_type.pid=###CURRENT_PID### ORDER BY tx_greencars_type.uid',	
+				'foreign_table_where' => 'AND tx_greencars_type.pid=###CURRENT_PID### ORDER BY tx_greencars_type.uid',
+        'suppress_icons'      => 1,
 				'size' => 1,	
 				'minitems' => 0,
 				'maxitems' => 1,	
 				'wizards' => array(
 					'_PADDING'  => 2,
-					'_VERTICAL' => 1,
+					'_VERTICAL' => 0,
 					'add' => array(
 						'type'   => 'script',
 						'title'  => 'Create new record',
@@ -270,13 +272,14 @@ $TCA['tx_greencars_main'] = array (
 					array('',0),
 				),
 				'foreign_table' => 'tx_greencars_engine',	
-				'foreign_table_where' => 'AND tx_greencars_engine.pid=###CURRENT_PID### ORDER BY tx_greencars_engine.uid',	
+				'foreign_table_where' => 'AND tx_greencars_engine.pid=###CURRENT_PID### ORDER BY tx_greencars_engine.uid',
+        'suppress_icons'      => 1,
 				'size' => 1,	
 				'minitems' => 0,
 				'maxitems' => 1,	
 				'wizards' => array(
 					'_PADDING'  => 2,
-					'_VERTICAL' => 1,
+					'_VERTICAL' => 0,
 					'add' => array(
 						'type'   => 'script',
 						'title'  => 'Create new record',
@@ -318,13 +321,14 @@ $TCA['tx_greencars_main'] = array (
 					array('',0),
 				),
 				'foreign_table' => 'tx_greencars_pricebracket',	
-				'foreign_table_where' => 'AND tx_greencars_pricebracket.pid=###CURRENT_PID### ORDER BY tx_greencars_pricebracket.uid',	
+				'foreign_table_where' => 'AND tx_greencars_pricebracket.pid=###CURRENT_PID### ORDER BY tx_greencars_pricebracket.uid',
+        'suppress_icons'      => 1,
 				'size' => 1,	
 				'minitems' => 0,
 				'maxitems' => 1,	
 				'wizards' => array(
 					'_PADDING'  => 2,
-					'_VERTICAL' => 1,
+					'_VERTICAL' => 0,
 					'add' => array(
 						'type'   => 'script',
 						'title'  => 'Create new record',
