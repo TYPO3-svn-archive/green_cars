@@ -8,6 +8,7 @@
 		<languageKey index="default" type="array">
 			<label index="tx_greencars_manufacturer">Green Cars: Manufacturer</label>
 			<label index="tx_greencars_manufacturer.title">Manufacturer</label>
+			<label index="tx_greencars_manufacturer.uid_parent">Superior Category</label>
 			<label index="tx_greencars_type">Green Cars: Type</label>
 			<label index="tx_greencars_type.title">Title</label>
 			<label index="tx_greencars_pricebracket">Green Cars: Price Bracket</label>
@@ -32,15 +33,16 @@
 			<label index="tx_greencars_main.imagetitletext">Image HTML title text</label>
 		</languageKey>
 		<languageKey index="de" type="array">
-			<label index="tx_greencars_manufacturer">Grüne Autos: Hersteller</label>
+			<label index="tx_greencars_manufacturer">Gr<![CDATA[&uuml;]]>ne Autos: Hersteller</label>
 			<label index="tx_greencars_manufacturer.title">Hersteller</label>
-			<label index="tx_greencars_type">Grüne Autos: Typ</label>
+			<label index="tx_greencars_manufacturer.uid_parent"><![CDATA[&Uuml;]]>bergeordnete Kategorie</label>
+			<label index="tx_greencars_type">Gr<![CDATA[&uuml;]]>ne Autos: Typ</label>
 			<label index="tx_greencars_type.title">Titel</label>
-			<label index="tx_greencars_pricebracket">Grüne Autos: Preisgruppe</label>
+			<label index="tx_greencars_pricebracket">Gr<![CDATA[&uuml;]]>ne Autos: Preisgruppe</label>
 			<label index="tx_greencars_pricebracket.title">Titel</label>
-			<label index="tx_greencars_engine">Grüne Autos: Antrieb</label>
+			<label index="tx_greencars_engine">Gr<![CDATA[&uuml;]]>ne Autos: Antrieb</label>
 			<label index="tx_greencars_engine.title">Titel</label>
-			<label index="tx_greencars_main">Grüne Autos</label>
+			<label index="tx_greencars_main">Gr<![CDATA[&uuml;]]>ne Autos</label>
 			<label index="tx_greencars_main.manufacturer">Hersteller</label>
 			<label index="tx_greencars_main.title">Modell</label>
 			<label index="tx_greencars_main.type">Typ</label>
@@ -49,7 +51,7 @@
 			<label index="tx_greencars_main.price">Preis</label>
 			<label index="tx_greencars_main.speed">Geschwindigkeit</label>
 			<label index="tx_greencars_main.consumption_in_town">Verbrauch innerorts</label>
-			<label index="tx_greencars_main.consumption_outof_town">Verbrauch außerorts</label>
+			<label index="tx_greencars_main.consumption_outof_town">Verbrauch au<![CDATA[&szlig;]]>erorts</label>
 			<label index="tx_greencars_main.consumption_average">Verbrauch Durchschnitt</label>
 			<label index="tx_greencars_main.co2">CO-2</label>
 			<label index="tx_greencars_main.image">Bilder</label>

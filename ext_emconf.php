@@ -16,7 +16,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'category' => 'plugin',
 	'shy' => 0,
 	'version' => '1.2.0',
-	'dependencies' => 'browser',
+	'dependencies' => 'browser, cps_tcatree',
 	'conflicts' => '',
 	'priority' => '',
 	'loadOrder' => '',
@@ -34,7 +34,8 @@ $EM_CONF[$_EXTKEY] = array(
 	'CGLcompliance_note' => '',
 	'constraints' => array(
 		'depends' => array(
-			'browser' => '3.7.0-',
+			'browser' => '3.9.6-0.0.0',
+			'cps_tcatree' => '0.3.0-0.0.0',
 		),
 		'conflicts' => array(
 		),

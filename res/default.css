@@ -1,8 +1,6 @@
 .tx-browser-pi1 .category_menu_treeview {
   float: left;
   padding-right: 1em;
-  position: relative;
-  top: -1em;
   width: 30em;
 }
 
@@ -11,6 +9,16 @@
 }
 .tx-browser-pi1 .category_menu_treeview a.selected {
   font-weight:bold;
+}
+.tx-browser-pi1 .box_select {
+  float:right;
+  position: relative;
+  top: 1em;
+}
+.tx-browser-pi1 select.category {
+  display: block;
+  margin: 0 0 1em 0;
+  width: 20em;
 }
 
 #treeview {

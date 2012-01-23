@@ -23,6 +23,7 @@ $TCA['tx_greencars_manufacturer'] = array (
 		'tstamp'    => 'tstamp',
 		'crdate'    => 'crdate',
 		'cruser_id' => 'cruser_id',
+		'treeParentField' => 'uid_parent',
 		'default_sortby' => 'ORDER BY title',	
 		'delete' => 'deleted',	
 		'enablecolumns' => array (		

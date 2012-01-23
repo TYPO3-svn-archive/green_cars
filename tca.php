@@ -4,7 +4,7 @@ if (!defined ('TYPO3_MODE')) 	die ('Access denied.');
 $TCA['tx_greencars_manufacturer'] = array (
 	'ctrl' => $TCA['tx_greencars_manufacturer']['ctrl'],
 	'interface' => array (
-		'showRecordFieldList' => 'hidden,title'
+		'showRecordFieldList' => 'hidden,title,uid_parent'
 	),
 	'feInterface' => $TCA['tx_greencars_manufacturer']['feInterface'],
 	'columns' => array (
@@ -25,9 +25,27 @@ $TCA['tx_greencars_manufacturer'] = array (
 				'eval' => 'required',
 			)
 		),
+    		'uid_parent' => array (
+      			'exclude'   => 0,
+			'label' => 'LLL:EXT:green_cars/locallang_db.xml:tx_greencars_manufacturer.uid_parent',		
+      			'config'    => array (
+        			'type'          => 'select',
+        			'form_type'     => 'user',
+        			'userFunc'      => 'tx_cpstcatree->getTree',
+        			'foreign_table' => 'tx_greencars_manufacturer',
+        			'treeView'      => 1,
+        			'expandable'    => 1,
+        			'expandFirst'   => 0,
+        			'expandAll'     => 0,
+        			'size'          => 1,
+        			'minitems'      => 0,
+        			'maxitems'      => 2,
+        			'trueMaxItems'  => 1,
+      			),
+    		),
 	),
 	'types' => array (
-		'0' => array('showitem' => 'hidden;;1;;1-1-1, title;;;;2-2-2')
+		'0' => array('showitem' => 'hidden;;1;;1-1-1, title;;;;2-2-2,uid_parent')
 	),
 	'palettes' => array (
 		'1' => array('showitem' => '')

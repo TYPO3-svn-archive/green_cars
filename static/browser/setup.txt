@@ -73,15 +73,17 @@ plugin.tx_browser_pi1 {
           }
         }
         filter {
-          tx_greencars_manufacturer {
+          XXXX_tx_greencars_manufacturer {
             title < plugin.tx_browser_pi1.displayList.master_templates.category_menu
             title {
               first_item {
                 value_stdWrap {
                   data = LLL:EXT:green_cars/locallang_db.xml:tx_greencars_main.manufacturer
+                  data >
+                  value = Hersteller und Modelle
                 }
               }
-              wrap = |
+              wrap = <div class="category_menu category_menu_treeview">|</div>
             }
           }
           tx_greencars_engine {
@@ -93,6 +95,9 @@ plugin.tx_browser_pi1 {
                 }
               }
               wrap = |
+              wrap {
+                object = <select class="category ###ONCHANGE###" name="###TABLE.FIELD###" id="###ID###" size="###SIZE###"###MULTIPLE###>|</select>
+              }
             }
           }
           tx_greencars_pricebracket {
@@ -104,6 +109,9 @@ plugin.tx_browser_pi1 {
                 }
               }
               wrap = |
+              wrap {
+                object = <select class="category ###ONCHANGE###" name="###TABLE.FIELD###" id="###ID###" size="###SIZE###"###MULTIPLE###>|</select>
+              }
               order {
                 field = uid
               }
@@ -118,6 +126,9 @@ plugin.tx_browser_pi1 {
                 }
               }
               wrap = |
+              wrap {
+                object = <select class="category ###ONCHANGE###" name="###TABLE.FIELD###" id="###ID###" size="###SIZE###"###MULTIPLE###>|</select>
+              }
             }
           }
         }
@@ -157,7 +168,7 @@ page {
   }
   shortcutIcon = EXT:green_cars/res/favicon.ico
   includeCSS {
-    green_cars = EXT:green_cars/res/default.css
+    green_cars = XXX_EXT:green_cars/res/default.css
   }
 }
   // page
