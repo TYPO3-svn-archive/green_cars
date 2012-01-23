@@ -73,7 +73,7 @@ plugin.tx_browser_pi1 {
           }
         }
         filter {
-          XXXX_tx_greencars_manufacturer {
+          tx_greencars_manufacturer {
             title < plugin.tx_browser_pi1.displayList.master_templates.category_menu
             title {
               first_item {
@@ -86,6 +86,7 @@ plugin.tx_browser_pi1 {
               wrap = <div class="category_menu category_menu_treeview">|</div>
             }
           }
+          tx_greencars_manufacturer >
           tx_greencars_engine {
             title < plugin.tx_browser_pi1.displayList.master_templates.selectbox
             title {
