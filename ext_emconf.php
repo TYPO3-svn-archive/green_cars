@@ -15,7 +15,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'description' => 'Database for cars with focus on environmental aspects. Case study for the Extension Browser - the TYPO3 Frontend Engine',
 	'category' => 'plugin',
 	'shy' => 0,
-	'version' => '1.2.0',
+	'version' => '1.3.1',
 	'dependencies' => 'browser, cps_tcatree',
 	'conflicts' => '',
 	'priority' => '',
@@ -34,7 +34,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'CGLcompliance_note' => '',
 	'constraints' => array(
 		'depends' => array(
-			'browser' => '3.9.6-0.0.0',
+			'browser' => '3.9.9-0.0.0',
 			'cps_tcatree' => '0.3.0-0.0.0',
 		),
 		'conflicts' => array(

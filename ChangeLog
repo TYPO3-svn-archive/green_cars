@@ -1,3 +1,11 @@
+1.3.1
+  12-03-04
+  Imrovements
+  * #00000: a-z-browser is renamed as index browser
+            Effects
+            * CSS             : azSelector -> indexBrowser
+            * HTML templates  : AZSELECTOR -> INDEXBROWSER
+
 1.3.0
   12-01-23
   Improvement
