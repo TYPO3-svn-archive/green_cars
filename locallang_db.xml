@@ -45,7 +45,7 @@
 			<label index="tx_greencars_main">Gr<![CDATA[&uuml;]]>ne Autos</label>
 			<label index="tx_greencars_main.manufacturer">Hersteller und Modelle</label>
 			<label index="tx_greencars_main.title">Modell</label>
-			<label index="tx_greencars_main.type">Typ</label>
+			<label index="tx_greencars_main.type">Fahrzeugtyp</label>
 			<label index="tx_greencars_main.engine">Antrieb</label>
 			<label index="tx_greencars_main.pricebracket">Preisgruppe</label>
 			<label index="tx_greencars_main.price">Preis</label>
