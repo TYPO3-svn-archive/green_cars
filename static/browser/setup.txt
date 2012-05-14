@@ -77,10 +77,10 @@ plugin.tx_browser_pi1 {
             title < plugin.tx_browser_pi1.displayList.master_templates.category_menu
             title {
               first_item {
-                value_stdWrap {
-                  data = LLL:EXT:green_cars/locallang_db.xml:tx_greencars_main.manufacturer
-                  data >
-                  value = Hersteller und Modelle
+                cObject {
+                  20 {
+                    data = LLL:EXT:green_cars/locallang_db.xml:tx_greencars_main.manufacturer
+                  }
                 }
               }
               wrap = <div class="category_menu category_menu_treeview">|</div>
@@ -91,8 +91,10 @@ plugin.tx_browser_pi1 {
             title < plugin.tx_browser_pi1.displayList.master_templates.selectbox
             title {
               first_item {
-                value_stdWrap {
-                  data = LLL:EXT:green_cars/locallang_db.xml:tx_greencars_main.engine
+                cObject {
+                  20 {
+                    data = LLL:EXT:green_cars/locallang_db.xml:tx_greencars_main.engine
+                  }
                 }
               }
               wrap = |
@@ -105,8 +107,10 @@ plugin.tx_browser_pi1 {
             title < plugin.tx_browser_pi1.displayList.master_templates.selectbox
             title {
               first_item {
-                value_stdWrap {
-                  data = LLL:EXT:green_cars/locallang_db.xml:tx_greencars_main.pricebracket
+                cObject {
+                  20 {
+                    data = LLL:EXT:green_cars/locallang_db.xml:tx_greencars_main.pricebracket
+                  }
                 }
               }
               wrap = |
@@ -122,8 +126,10 @@ plugin.tx_browser_pi1 {
             title < plugin.tx_browser_pi1.displayList.master_templates.selectbox
             title {
               first_item {
-                value_stdWrap {
-                  data = LLL:EXT:green_cars/locallang_db.xml:tx_greencars_main.type
+                cObject {
+                  20 {
+                    data = LLL:EXT:green_cars/locallang_db.xml:tx_greencars_main.type
+                  }
                 }
               }
               wrap = |
