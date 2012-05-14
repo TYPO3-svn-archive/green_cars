@@ -16,7 +16,7 @@
 			<label index="tx_greencars_engine">Green Cars: Engine</label>
 			<label index="tx_greencars_engine.title">Title</label>
 			<label index="tx_greencars_main">Green Cars</label>
-			<label index="tx_greencars_main.manufacturer">Manufacturer</label>
+			<label index="tx_greencars_main.manufacturer">Manufacturer and models</label>
 			<label index="tx_greencars_main.title">Model</label>
 			<label index="tx_greencars_main.type">Type</label>
 			<label index="tx_greencars_main.engine">Engine</label>
@@ -43,7 +43,7 @@
 			<label index="tx_greencars_engine">Gr<![CDATA[&uuml;]]>ne Autos: Antrieb</label>
 			<label index="tx_greencars_engine.title">Titel</label>
 			<label index="tx_greencars_main">Gr<![CDATA[&uuml;]]>ne Autos</label>
-			<label index="tx_greencars_main.manufacturer">Hersteller</label>
+			<label index="tx_greencars_main.manufacturer">Hersteller und Modelle</label>
 			<label index="tx_greencars_main.title">Modell</label>
 			<label index="tx_greencars_main.type">Typ</label>
 			<label index="tx_greencars_main.engine">Antrieb</label>
