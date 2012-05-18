@@ -86,7 +86,6 @@ plugin.tx_browser_pi1 {
               wrap = <div class="category_menu category_menu_treeview">|</div>
             }
           }
-          tx_greencars_manufacturer >
           tx_greencars_engine {
             title < plugin.tx_browser_pi1.displayList.master_templates.selectbox
             title {
