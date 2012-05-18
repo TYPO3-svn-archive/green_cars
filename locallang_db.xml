@@ -6,6 +6,10 @@
 	</meta>
 	<data type="array">
 		<languageKey index="default" type="array">
+			<label index="filter_phrase.engine">All engines</label>
+			<label index="filter_phrase.pricebracket">All pricebrackets</label>
+			<label index="filter_phrase.title">All manufacturers and models</label>
+			<label index="filter_phrase.type">All type</label>
 			<label index="tx_greencars_manufacturer">Green Cars: Manufacturer</label>
 			<label index="tx_greencars_manufacturer.title">Manufacturer</label>
 			<label index="tx_greencars_manufacturer.uid_parent">Superior Category</label>

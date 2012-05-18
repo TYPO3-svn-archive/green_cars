@@ -79,7 +79,7 @@ plugin.tx_browser_pi1 {
               first_item {
                 cObject {
                   20 {
-                    data = LLL:EXT:green_cars/locallang_db.xml:tx_greencars_main.manufacturer
+                    data = LLL:EXT:green_cars/locallang_db.xml:filter_phrase.manufacturer
                   }
                 }
               }
@@ -93,7 +93,7 @@ plugin.tx_browser_pi1 {
               first_item {
                 cObject {
                   20 {
-                    data = LLL:EXT:green_cars/locallang_db.xml:tx_greencars_main.engine
+                    data = LLL:EXT:green_cars/locallang_db.xml:filter_phrase.engine
                   }
                 }
               }
@@ -109,7 +109,7 @@ plugin.tx_browser_pi1 {
               first_item {
                 cObject {
                   20 {
-                    data = LLL:EXT:green_cars/locallang_db.xml:tx_greencars_main.pricebracket
+                    data = LLL:EXT:green_cars/locallang_db.xml:filter_phrase.pricebracket
                   }
                 }
               }
@@ -128,7 +128,7 @@ plugin.tx_browser_pi1 {
               first_item {
                 cObject {
                   20 {
-                    data = LLL:EXT:green_cars/locallang_db.xml:tx_greencars_main.type
+                    data = LLL:EXT:green_cars/locallang_db.xml:filter_phrase.type
                   }
                 }
               }
