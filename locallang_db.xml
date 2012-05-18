@@ -8,8 +8,8 @@
 		<languageKey index="default" type="array">
 			<label index="filter_phrase.engine">All engines</label>
 			<label index="filter_phrase.pricebracket">All pricebrackets</label>
-			<label index="filter_phrase.title">All manufacturers and models</label>
-			<label index="filter_phrase.type">All type</label>
+			<label index="filter_phrase.title">All models</label>
+			<label index="filter_phrase.type">All types</label>
 			<label index="tx_greencars_manufacturer">Green Cars: Manufacturer</label>
 			<label index="tx_greencars_manufacturer.title">Manufacturer</label>
 			<label index="tx_greencars_manufacturer.uid_parent">Superior Category</label>
@@ -37,6 +37,10 @@
 			<label index="tx_greencars_main.imagetitletext">Image HTML title text</label>
 		</languageKey>
 		<languageKey index="de" type="array">
+			<label index="filter_phrase.engine">Alle Antriebe</label>
+			<label index="filter_phrase.pricebracket">Alle Preisgruppen</label>
+			<label index="filter_phrase.title">Alle Modelle</label>
+			<label index="filter_phrase.type">Alle Typen</label>
 			<label index="tx_greencars_manufacturer">Gr<![CDATA[&uuml;]]>ne Autos: Hersteller</label>
 			<label index="tx_greencars_manufacturer.title">Hersteller</label>
 			<label index="tx_greencars_manufacturer.uid_parent"><![CDATA[&Uuml;]]>bergeordnete Kategorie</label>
