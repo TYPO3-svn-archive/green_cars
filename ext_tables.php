@@ -118,9 +118,15 @@ t3lib_extMgm::addStaticFile($_EXTKEY,'static/browser/', 'Browser');
   //
   // Add pagetree icons
 
+  // #i0002, 130917, dwildt, 3-
+//$TCA['pages']['columns']['module']['config']['items'][] =
+//  array('Green Cars', 'green_cars', t3lib_extMgm::extRelPath($_EXTKEY).'ext_icon.gif');
+//$ICON_TYPES['green_cars'] = array('icon' => t3lib_extMgm::extRelPath($_EXTKEY).'ext_icon.gif');
+
+  // #i0002, 130917, dwildt, 3+
 $TCA['pages']['columns']['module']['config']['items'][] =
-  array('Green Cars', 'green_cars', t3lib_extMgm::extRelPath($_EXTKEY).'ext_icon.gif');
-$ICON_TYPES['green_cars'] = array('icon' => t3lib_extMgm::extRelPath($_EXTKEY).'ext_icon.gif');
+  array('Green Cars', 'greencars', t3lib_extMgm::extRelPath($_EXTKEY).'ext_icon.gif');
+t3lib_SpriteManager::addTcaTypeIcon('pages', 'contains-greencars', '../typo3conf/ext/green_cars/ext_icon.gif');
   // Add pagetree icons
 
 ?>
