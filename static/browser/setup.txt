@@ -74,7 +74,7 @@ plugin.tx_browser_pi1 {
         }
         filter {
           tx_greencars_manufacturer {
-            title < plugin.tx_browser_pi1.displayList.master_templates.category_menu
+            title < plugin.tx_browser_pi1.displayList.master_templates.treeview
             title {
               first_item {
                 cObject {
@@ -83,7 +83,7 @@ plugin.tx_browser_pi1 {
                   }
                 }
               }
-              wrap = <div class="category_menu category_menu_treeview">|</div>
+              wrap = <div class="category_menu category_menu_treeview" style="float:left;padding:0 1em 0 0;">|</div>
             }
           }
           tx_greencars_engine {

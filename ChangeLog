@@ -1,3 +1,9 @@
+1.3.3
+  12-10-10
+  Improvement
+  * #00001: res/default.html. Extended with filter ###TX_GREENCARS_MAIN.PRICE###
+            static/browser/setup.txt: tx_greencars_manufacturer.title is moved from CATEGORY_MENU to TREEVIEW
+
 1.3.2
   12-05-18
   Update
